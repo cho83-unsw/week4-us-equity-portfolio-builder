@@ -1,0 +1,11 @@
+sector,ann_return,ann_vol,sharpe
+Utilities,0.0519,0.2842,0.186
+Consumer,0.0619,0.3005,0.2353
+Comm,0.1005,0.3029,0.3263
+RealEstate,0.1018,0.3157,0.3301
+Industrials,0.1349,0.3785,0.3577
+Financials,0.1449,0.3687,0.4053
+Materials,0.1886,0.3732,0.4936
+Energy,0.2521,0.4925,0.5134
+Healthcare,0.137,0.2597,0.5311
+Tech,0.3237,0.4615,0.662

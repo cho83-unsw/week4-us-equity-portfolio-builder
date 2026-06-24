@@ -1,0 +1,38 @@
+name: Streamlit Deployment Check
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  submission-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install dependencies
+        shell: bash
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          if [ -f requirements-dev.txt ]; then
+            python -m pip install -r requirements-dev.txt
+          fi
+
+      - name: Run deployment readiness check
+        shell: bash
+        run: |
+          python tools/workflow.py check-app-submission \
+            --target fins2026/week4 \
+            --entrypoint fins2026/week4/app/streamlit_app.py \
+            --run-tests

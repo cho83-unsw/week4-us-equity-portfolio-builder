@@ -1,0 +1,4 @@
+# Small warm-up universe for the first Yahoo Finance example.
+AAPL
+MSFT
+JPM

@@ -1,0 +1,11 @@
+# 10-stock Week 4 Streamlit app universe.
+AAPL
+NVDA
+MSFT
+AMZN
+JPM
+JNJ
+WMT
+XOM
+KO
+PG

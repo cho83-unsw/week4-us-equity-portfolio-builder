@@ -1,0 +1,11 @@
+{
+  "name": "fred_sp500_daily",
+  "description": "Daily S&P 500 validation fixture.",
+  "source": "FRED CSV download for SP500",
+  "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500",
+  "frequency": "daily",
+  "date_column": "date",
+  "units": {
+    "SP500": "index"
+  }
+}

@@ -1,0 +1,4 @@
+# Small warm-up universe for the first authenticated Tiingo example.
+AAPL
+MSFT
+JPM
